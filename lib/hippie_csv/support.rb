@@ -30,7 +30,8 @@ module HippieCSV
         CSV.parse(
           string,
           quote_char: quote_character,
-          col_sep: guess_delimeter(string, quote_character)
+          col_sep: guess_delimeter(string, quote_character),
+          liberal_parsing: true
         )
       end
 
